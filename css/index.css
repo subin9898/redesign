@@ -1,0 +1,2633 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* @font-face {
+  font-family: 'Russo One', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+} */
+
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap");
+  /* src: url('../font/Noto_Sans_KR/NotoSansKR-Light.otf');
+  src: url('../font/Noto_Sans_KR/NotoSansKR-Regular.otf'); */
+}
+
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'SANJUGotgam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff')format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'MaplestoryOTFBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Lobster', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff');
+}
+
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'snata';
+  src: url('../font/christmas_and_santona/Christmas and Santona.ttf');
+}
+
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+}
+
+@font-face {
+  font-family: 'ChristmasFlake';
+  src: url('../font/merry_christmas/MerryChristmasFlake.ttf');
+}
+
+@font-face {
+  font-family: 'ChristmasStar';
+  src: url('../font/merry_christmas/MerryChristmasStar.ttf');
+}
+
+@font-face {
+  font-family: 'Haettenschweiler';
+  src: url('../font/Haettenschweiler-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MapoAgape';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoAgapeA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUIT Variable', sans-serif;
+  src: url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css");
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('../font/myriad-pro-cufonfonts-webfont/MYRIADPRO-REGULAR.woff');
+}
+
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('http://www.myfontfree.com/data/200/c/century-gothic/Century Gothic.ttf');
+}
+
+html {
+  font-family: 'Noto Sans KR';
+  overflow-x: hidden;
+}
+
+
+/* -----------------------------------------------layout------------------------------------ */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.intro figure {
+  width: 1200px;
+  /* border: 1px solid red; */
+}
+
+#introtxt {
+  width: 1200px;
+  height: 700px;
+}
+
+#introtxt path {
+  fill: transparent;
+  /* transparent : 투명색 */
+  stroke: #fff;
+  stroke-width: 0.5;
+  /* transition: width 1s ease 0s, height 1s ease 1s; */
+
+}
+
+#introtxt.on path {
+  stroke-dashoffset: 0 !important;
+  fill: #fff;
+}
+
+#introtxt.on path.w {
+  stroke-dashoffset: 0 !important;
+  fill: transparent;
+}
+
+.Menubtn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  width: 75px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.Menubtn>span {
+  width: 75px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  margin: 15px auto;
+  transform-origin: 24% center;
+  transition: all 0.5s ease 0s;
+}
+
+.Menubtn.close>span:nth-of-type(1) {
+  transform: rotate(30deg);
+}
+
+.Menubtn.close>span:nth-of-type(2) {
+  transform: rotate(-30deg);
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.back {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease 0s;
+}
+
+.back.show {
+  pointer-events: auto;
+  opacity: 1;
+  left: 0;
+}
+
+
+.back>.gnb {
+  font-family: 'Russo One';
+  color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.back>.gnb li {
+  line-height: 0;
+  margin-bottom: 150px;
+  font-size: 200px;
+  transition: all 0.5s ease 0s;
+}
+
+.back>.gnb li:first-of-type {
+  margin-left: 15px;
+}
+
+.back>.gnb li:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+@keyframes fontcolor {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .back>.gnb>ul>li:nth-of-type(1) {
+  transition: all 0.5s ease 0s;
+} */
+
+.back>.gnb>ul>li:nth-of-type(1) span {
+  /* opacity: 0.7; */
+  color: rgb(201, 201, 201);
+}
+
+.back>.gnb>ul>li:nth-of-type(2) span {
+  /* opacity: 0.5; */
+  color: rgb(136, 136, 136);
+
+}
+
+.back>.gnb>ul>li:nth-of-type(3) span {
+  /* opacity: 0.4; */
+  color: rgb(107, 107, 107);
+
+}
+
+.back>.gnb>ul>li:nth-of-type(4) span {
+  /* opacity: 0.3; */
+  color: rgb(91, 91, 91);
+
+}
+
+.back>.gnb li:hover {
+  animation: fontcolor 1s ease 0s;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+.about {
+  height: 100vh;
+  position: relative;
+}
+
+.about>h1:first-of-type {
+  font-family: 'Russo One';
+  font-size: 134px;
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  text-transform: uppercase;
+}
+
+.about>h1:nth-of-type(2) {
+  font-family: 'SBAggroB';
+  font-size: 50px;
+  position: absolute;
+  top: 98px;
+  right: 745px;
+  text-transform: uppercase;
+}
+
+.about>h1:last-of-type {
+  font-family: 'SBAggroB';
+  font-size: 30px;
+  position: absolute;
+  top: 155px;
+  left: 98px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* .profileimg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50px;
+  left: 900px;
+}
+
+.profileimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+} */
+
+.info {
+  font-family: 'Russo One';
+  position: absolute;
+  top: 140px;
+  right: 285px;
+  line-height: 0;
+  margin-bottom: 50px;
+
+}
+
+.ingo>ul li {
+  line-height: 0;
+}
+
+.info>ul>li:nth-of-type(1) {
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+.info>ul>li:nth-of-type(2) {
+  font-size: 36px;
+  margin-bottom: 42px;
+
+}
+
+.info>ul>li:nth-of-type(3) {
+  font-size: 36px;
+}
+
+.educ {
+  font-family: 'Russo One';
+  position: absolute;
+  top: 395px;
+  left: 95px;
+  width: 800px;
+}
+
+.educ>h3 {
+  font-size: 90px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.edcu1 {}
+
+.edcu1 li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.edcu1 li>span {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-align: start;
+  width: 380px;
+}
+
+
+.iam {
+  position: absolute;
+  top: 430px;
+  right: 250px;
+  width: 612px;
+  height: 700px;
+  word-break: keep-all;
+}
+
+.iam>p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* ----------------------------------LANGUAGES---------------------------------------- */
+
+.LANGUAGES {
+  background-color: #000;
+  height: 100vh;
+  position: relative;
+}
+
+.LANGUAGES>section {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.LANGUAGES>section>h1 {
+  color: #000;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-family: 'Noto Sans KR';
+  font-size: 25px;
+}
+
+.html {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 260px;
+  left: 115px;
+  width: 700px;
+}
+
+
+
+
+.white h1 {
+  font-family: 'Russo One';
+  font-size: 134px;
+}
+
+.white p {
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+  font-size: 20px;
+}
+
+
+.skillFigure {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.per {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans KR';
+}
+
+.rect {
+  /* transform: rotate(90deg); */
+}
+
+.rect rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  /* stroke-dasharray: 565.6;
+  stroke-dashoffset: 565.6; */
+  /* transition: all 1s ease 0s; */
+  stroke-linecap: round;
+
+}
+
+/* .rect:hover rect {
+  stroke-dashoffset: 0;
+} */
+
+.css {
+  position: absolute;
+  top: 550px;
+  left: 115px;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+
+.java {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 260px;
+  right: 115px;
+  width: 700px;
+}
+
+.java h1 {
+  font-family: 'Russo One';
+  font-size: 134px;
+}
+
+.java p {
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+  font-size: 20px;
+  display: block;
+  width: 425px;
+}
+
+.java .rect rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  /* stroke-dasharray: 565.6;
+  stroke-dashoffset: 565.6; */
+  /* transition: all 1s ease 0s; */
+  stroke-linecap: round;
+}
+
+.jquery {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 550px;
+  right: 115px;
+  width: 700px;
+}
+
+.jquery h1 {
+  font-family: 'Russo One';
+  font-size: 120px;
+}
+
+.jquery p {
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+  font-size: 20px;
+  display: block;
+  width: 391px;
+}
+
+.jquery .rect rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  /* stroke-dasharray: 565.6;
+  stroke-dashoffset: 565.6; */
+  /* transition: all 1s ease 0s; */
+  stroke-linecap: round;
+}
+
+/* ----------------------------------banner------------------------------------------------ */
+
+.banner {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.banner>h1 {
+  font-family: 'Russo One';
+  font-size: 134px;
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  text-transform: uppercase;
+}
+
+.banner>section {
+  position: absolute;
+  top: 80px;
+  left: 700px;
+}
+
+.banner>section>p {
+  margin-bottom: 10px;
+}
+
+.banner>section>p:first-of-type {
+  background-color: #fff;
+  color: #000;
+  width: 150px;
+  display: block;
+  text-align: center;
+}
+
+.station {
+  width: 1290px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.train {
+  width: 400%;
+  height: 100%;
+  display: flex;
+
+}
+
+.train>li {
+  flex: 1;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  width: 100%;
+  height: 450px;
+  /* position: relative; */
+}
+
+.train>li>a {
+  width: 100%;
+  height: 450px;
+}
+
+.train>li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: brightness(0.4); */
+}
+
+.fa-angle-left {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  font-size: 50px;
+  color: #000;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.fa-angle-right {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  font-size: 50px;
+  color: #000;
+  cursor: pointer;
+  opacity: 0.7;
+
+}
+
+
+
+
+
+/* --------------banner popup--------------------- */
+
+
+.bannerPopup {
+  width: 940px;
+  height: 685px;
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  pointer-events: none;
+}
+
+.bannerPopup.show {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.bannerPopup>h1 {
+  font-family: 'Russo One';
+  text-transform: uppercase;
+  font-size: 45px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.bannerPopup>p {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bannerPopup>figure {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.bannerPopup>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.colorboard {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.colorboard1 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.colorboard1>div {
+  width: 100px;
+  height: 100px;
+  background-color: #fbc121;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.colorboard1>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.colorboard2 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+
+.colorboard2>div {
+  width: 100px;
+  height: 100px;
+  background-color: #db0008;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.colorboard2>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+.popupinfo {
+  position: absolute;
+  left: 50%;
+  top: 450px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.popupinfo>dt {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.popupinfo>dd:first-of-type {
+  font-family: 'ONE-Mobile-POP';
+  margin-bottom: 10px;
+}
+
+.popupinfo>dd:last-of-type {
+  font-weight: bold;
+}
+
+.popupclosebtn {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-family: 'Russo One';
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------- */
+
+.bannerPopup2 {
+  width: 940px;
+  height: 685px;
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  pointer-events: none;
+}
+
+.bannerPopup2.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bannerPopup2>h1 {
+  font-family: 'Russo One';
+  text-transform: uppercase;
+  font-size: 45px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.bannerPopup2>p {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bannerPopup2>figure {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.bannerPopup2>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerPopup2>.colorboard {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.bannerPopup2 .colorboard1 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.bannerPopup2 .colorboard1>div {
+  width: 100px;
+  height: 100px;
+  background-color: #fbc121;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup2 .colorboard1>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bannerPopup2 .colorboard2 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  margin-right: 15px;
+
+}
+
+.bannerPopup2 .colorboard2>div {
+  width: 100px;
+  height: 100px;
+  background-color: #EA35F9;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup2 .colorboard2>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bannerPopup2 .colorboard3 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.bannerPopup2 .colorboard3>div {
+  width: 100px;
+  height: 100px;
+  background-color: #001032;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup2 .colorboard3>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+.banner .bannerPopup2 .popupinfo {
+  position: absolute;
+  left: 62%;
+  top: 450px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.bannerPopup2 .popupinfo figure {
+  position: absolute;
+  top: 58px;
+  left: -110px;
+}
+
+.bannerPopup2 .popupinfo>dt {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+.bannerPopup2 .popupinfo>dd svg {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 10px;
+
+}
+
+/* ----------------------------------------------------------- */
+
+.bannerPopup3 {
+  width: 940px;
+  height: 685px;
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  pointer-events: none;
+}
+
+.bannerPopup3.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bannerPopup3>h1 {
+  font-family: 'Russo One';
+  text-transform: uppercase;
+  font-size: 45px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.bannerPopup3>p {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bannerPopup3>figure {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.bannerPopup3>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerPopup3>.colorboard {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.bannerPopup3 .colorboard1 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.bannerPopup3 .colorboard1>div {
+  width: 100px;
+  height: 100px;
+  background-color: #f6ecb7;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup3 .colorboard1>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bannerPopup3 .colorboard2 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  margin-right: 15px;
+
+}
+
+.bannerPopup3 .colorboard2>div {
+  width: 100px;
+  height: 100px;
+  background-color: #263684;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup3 .colorboard2>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+.bannerPopup3 .colorboard3>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+.bannerPopup3 .popupinfo {
+  position: absolute;
+  left: 50%;
+  top: 450px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.bannerPopu32 .popupinfo>dt {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+.bannerPopup3 .popupinfo>dd {
+  font-size: 20px;
+}
+
+
+.bannerPopup3 .popupinfo>dd:first-of-type {
+  font-family: 'Cafe24Ssurround';
+  margin-bottom: 5px;
+}
+
+.bannerPopup3 .popupinfo>dd:nth-of-type(2) {
+  margin-bottom: 5px;
+  font-family: 'snata';
+}
+
+
+
+/* .bannerPopup2 .popupinfo>dd:last-of-type {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+
+
+
+/* ------------------------------------------------ */
+.bannerPopup4 {
+  width: 940px;
+  height: 685px;
+  border: 3px solid #fff;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  pointer-events: none;
+}
+
+.bannerPopup4.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bannerPopup4>h1 {
+  font-family: 'Russo One';
+  text-transform: uppercase;
+  font-size: 45px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.bannerPopup4>p {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bannerPopup4>figure {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.bannerPopup4>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerPopup4>.colorboard {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.bannerPopup4 .colorboard1 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.bannerPopup4 .colorboard1>div {
+  width: 100px;
+  height: 100px;
+  background-color: #10003e;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup4 .colorboard1>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bannerPopup4 .colorboard2 {
+  background-color: #fff;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  margin-right: 15px;
+
+}
+
+.bannerPopup4 .colorboard2>div {
+  width: 100px;
+  height: 100px;
+  background-color: #fec900;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bannerPopup4 .colorboard2>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+.bannerPopup4 .colorboard3>p {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+  color: #000;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+.bannerPopup4 .popupinfo {
+  position: absolute;
+  left: 50%;
+  top: 450px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.bannerPopup4 .popupinfo>dt {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+.bannerPopup4 .popupinfo>dd:first-of-type {
+  font-family: 'Cafe24Ssurround';
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* ---------------------------------POPUP---------------------------------------------- */
+.popup {
+  height: 100vh;
+  position: relative;
+}
+
+.popup>h1 {
+  font-family: 'Russo One';
+  font-size: 134px;
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  text-transform: uppercase;
+}
+
+.popup>section {
+  position: absolute;
+  top: 80px;
+  left: 700px;
+}
+
+.popup>section>p {
+  margin-bottom: 10px;
+}
+
+.popup>section>p:first-of-type {
+  background-color: #000;
+  color: #fff;
+  width: 150px;
+  display: block;
+  text-align: center;
+}
+
+
+.station2 {
+  width: 1020px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.train2 {
+  width: 800%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s ease 0s;
+
+}
+
+.train2>li {
+  flex: 1;
+  transition: all 0.5s ease 0s;
+  width: 500px;
+  height: 500px;
+  /* margin-right: 10px; */
+  /* position: relative; */
+  display: flex;
+}
+
+.train2>li img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  /* filter: brightness(0.4); */
+}
+
+
+
+
+.train2>li .popup1 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup1>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup1>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup1>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+
+.popupcolor {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 110px;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.popupcolor>li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.train2>li .popup1>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.popupfont {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 366px;
+  font-size: 25px;
+}
+
+.popupfont>li:first-of-type {
+  margin-bottom: 5px;
+}
+
+
+/* -------------------------------------------- */
+
+
+
+.train2>li .popup2 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+.train2>li .popup2>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+.train2>li .popup2 .popupfont>li:first-of-type {
+  font-family: 'myriad';
+}
+
+.train2>li .popup2 .popupfont>li:last-of-type {
+  font-family: 'Lobster';
+}
+
+
+.train2>li .popup2>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup2>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup2>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+
+
+
+/* ------------------------------ */
+
+.train2>li .popup3 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup3>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup3 .popupfont>li:nth-of-type(1) {
+  font-family: 'ONE-Mobile-POP';
+}
+
+.train2>li .popup3 .popupfont>li:nth-of-type(2) {
+  font-family: 'SUIT Variable';
+  font-weight: 100;
+}
+
+.train2>li .popup3 .popupfont>li:nth-of-type(3) {
+  font-weight: bold;
+}
+
+
+
+
+.train2>li .popup3>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup3>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup3>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+
+/* ----------------------------------------------------- */
+
+.train2>li .popup4 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+.train2>li .popup4>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup4 .popupfont>li:nth-of-type(1) {
+  font-family: 'Cafe24Ssurround';
+}
+
+.train2>li .popup4 .popupfont>li:nth-of-type(2) {
+  font-family: 'myriad';
+}
+
+.train2>li .popup4 .popupfont>li:nth-of-type(3) {
+  font-weight: 600;
+}
+
+
+.train2>li .popup4>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup4>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup4>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* ---------------------------------------- */
+
+
+.train2>li .popup5 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup5>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+
+
+.train2>li .popup5>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup5>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup5>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+
+
+.train2>li .popup5 .popupfont li {
+  font-family: 'Oswald';
+  font-size: 25px;
+}
+
+/* ---------------------------------------- */
+
+.train2>li .popup6 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup6>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup6 .popupfont>li:nth-of-type(1) {
+  font-family: 'SANJUGotgam';
+}
+
+.train2>li .popup6 .popupfont>li:nth-of-type(2) {
+  font-family: 'MapoAgape';
+}
+
+.train2>li .popup6 .popupfont>li:nth-of-type(3) {
+  font-family: 'myriad';
+}
+
+
+
+.train2>li .popup6>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup6>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup6>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* ------------------------------------------------- */
+
+.train2>li .popup7 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup7>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup7 .popupfont>li:nth-of-type(1) {
+  font-family: 'ChristmasFlake';
+}
+
+.train2>li .popup7 .popupfont>li:nth-of-type(2) {
+  font-family: 'ChristmasStar';
+}
+
+.train2>li .popup7 .popupfont>li:nth-of-type(3) {
+  font-family: 'Haettenschweiler';
+}
+
+.train2>li .popup7 .popupfont>li:nth-of-type(4) {
+  font-family: 'Century Gothic';
+}
+
+
+.train2>li .popup7>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup7>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup7>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* ------------------------------------------- */
+
+
+.train2>li .popup8 {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.train2>li .popup8>h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.train2>li .popup8 .popupfont>li:nth-of-type(1) {
+  font-family: ;
+  font-weight: bold;
+}
+
+.train2>li .popup8 .popupfont>li:nth-of-type(2) {
+  font-family: 'SUIT Variable';
+  font-weight: 600;
+}
+
+
+.train2>li .popup8>p:first-of-type {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup8>p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.train2>li .popup8>h2 {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------Redesign------------------------------------ */
+
+
+.redesign {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  height: 800vh;
+}
+
+.re-main {
+  width: 100%;
+  height: 100vh;
+}
+
+.redesign>.re-main>h1 {
+  font-family: 'Russo One';
+  font-size: 134px;
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  text-transform: uppercase;
+}
+
+.redesign>.re-main section {
+  position: absolute;
+  top: 450px;
+  left: 250px;
+
+}
+
+.redesign>.re-main section>dt {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.redesign>.re-main section>dd {
+  font-size: 20px;
+}
+
+.redesign>.re-main section>dd:nth-of-type(2) {
+  background: #fff;
+  color: #000;
+  width: 218px;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.redesign>.re-main section>dd:nth-of-type(2):hover {
+  background: black;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.redesign>.re-main section>dd:last-of-type {
+  background: #fff;
+  color: #000;
+  width: 218px;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.redesign>.re-main section>dd:last-of-type:hover {
+  background: black;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+
+.redesign>.re-main figure img:first-of-type {
+  width: 700px;
+  height: 900px;
+  object-fit: contain;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  z-index: 1;
+}
+
+.redesign>.re-main figure img:last-of-type {
+  width: 700px;
+  height: 900px;
+  object-fit: contain;
+  position: absolute;
+  top: 100px;
+  left: 900px;
+}
+
+.re-div {
+  position: relative;
+  width: 100%;
+  height: 600vh;
+}
+
+
+.g-re {
+  width: 780px;
+  height: 1200px;
+
+}
+
+.g-re>img {
+  width: 780px;
+  height: 1200px;
+  object-fit: contain;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(-4px 4px 19px black);
+}
+
+
+@keyframes redot {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes redot2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
+
+
+#circle1 {
+  font-size: 35px;
+  position: absolute;
+  top: 190px;
+  right: 565px;
+  z-index: 2;
+  color: rgba(128, 128, 128, 0.289);
+  cursor: pointer;
+}
+
+
+#circle1:hover+.maindot1 {
+  animation: redot 3s linear 0s infinite;
+}
+
+.maindot1 {
+  position: absolute;
+  top: 200px;
+  right: 424px;
+  width: 170px;
+  height: 82px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+
+#circle2 {
+  font-size: 35px;
+  position: absolute;
+  top: 514px;
+  left: 568px;
+  z-index: 2;
+  color: rgba(128, 128, 128, 0.289);
+  cursor: pointer;
+}
+
+
+#circle2:hover+.maindot2 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+.maindot2 {
+  position: absolute;
+  top: 525px;
+  left: 410px;
+  width: 184px;
+  height: 15px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle3 {
+  font-size: 35px;
+  position: absolute;
+  top: 899px;
+  left: 581px;
+  z-index: 2;
+  color: rgba(128, 128, 128, 0.289);
+  cursor: pointer;
+}
+
+
+#circle3:hover+.maindot3 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+
+.maindot3 {
+  position: absolute;
+  top: 863px;
+  left: 313px;
+  width: 292px;
+  height: 63px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+#circle4 {
+  font-size: 35px;
+  position: absolute;
+  top: 1117px;
+  right: 575px;
+  z-index: 2;
+  color: rgba(128, 128, 128, 0.289);
+  cursor: pointer;
+}
+
+
+#circle4:hover+.maindot4 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+
+
+.maindot4 {
+  position: absolute;
+  top: 1057px;
+  right: 426px;
+  width: 160px;
+  height: 78px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+.re-div>.h1main {
+  font-family: 'Russo One';
+  font-size: 180px;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 580px;
+  left: -10px;
+  text-transform: uppercase;
+}
+
+.mainp1 {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  display: block;
+  width: 300px;
+  height: 300px;
+  line-height: 25px;
+}
+
+.mainp2 {
+  position: absolute;
+  top: 520px;
+  left: 240px;
+  display: block;
+  width: 160px;
+  height: 110px;
+}
+
+.mainp3 {
+  position: absolute;
+  top: 902px;
+  left: 168px;
+  display: block;
+  width: 256px;
+  height: 219px;
+}
+
+.mainp4 {
+  position: absolute;
+  top: 1101px;
+  right: 198px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+
+
+.g-re2>img {
+  width: 780px;
+  height: 1200px;
+  object-fit: contain;
+  position: absolute;
+  top: 1520px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(-4px 4px 19px black);
+}
+
+#circle5 {
+  font-size: 35px;
+  position: absolute;
+  top: 1626px;
+  right: 595px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle5:hover+.maindot5 {
+  animation: redot 3s linear 0s infinite;
+}
+
+
+
+.maindot5 {
+  position: absolute;
+  top: 1635px;
+  right: 426px;
+  display: block;
+  width: 206px;
+  height: 92px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle6 {
+  font-size: 35px;
+  position: absolute;
+  top: 1875px;
+  left: 648px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle6:hover+.maindot6 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+
+.maindot6 {
+  position: absolute;
+  top: 1885px;
+  left: 488px;
+  display: block;
+  width: 184px;
+  height: 15px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle7 {
+  font-size: 35px;
+  position: absolute;
+  top: 2197px;
+  right: 647px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle7:hover+.maindot7 {
+  animation: redot 3s linear 0s infinite;
+}
+
+.maindot7 {
+  position: absolute;
+  top: 2188px;
+  right: 398px;
+  display: block;
+  width: 272px;
+  height: 33px;
+  z-index: 1;
+  stroke-dasharray: 13;
+  stroke-dashoffset: 25;
+}
+
+#circle8 {
+  font-size: 35px;
+  position: absolute;
+  top: 2412px;
+  left: 590px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle8:hover+.maindot8 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+
+.maindot8 {
+  position: absolute;
+  top: 2394px;
+  left: 496px;
+  display: block;
+  width: 128px;
+  height: 43px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+.re-div>.h1product {
+  font-family: 'Russo One';
+  font-size: 180px;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 1935px;
+  right: 94px;
+  text-transform: uppercase;
+}
+
+.productp1 {
+  position: absolute;
+  top: 1698px;
+  right: 151px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+.productp2 {
+  position: absolute;
+  top: 1878px;
+  left: 295px;
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+.productp3 {
+  position: absolute;
+  top: 2160px;
+  right: 186px;
+  display: block;
+  width: 260px;
+  height: 40px;
+}
+
+.productp4 {
+  position: absolute;
+  top: 2382px;
+  left: 216px;
+  display: block;
+  width: 263px;
+  height: 40px;
+}
+
+
+.g-re3>img {
+  width: 780px;
+  height: 1200px;
+  object-fit: contain;
+  position: absolute;
+  top: 3000px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(-4px 4px 19px black);
+}
+
+#circle9 {
+  font-size: 35px;
+  position: absolute;
+  top: 3239px;
+  right: 565px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle9:hover+.maindot9 {
+  animation: redot 3s linear 0s infinite;
+}
+
+.maindot9 {
+  position: absolute;
+  top: 3251px;
+  right: 444px;
+  display: block;
+  width: 166px;
+  height: 62px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle10 {
+  font-size: 35px;
+  position: absolute;
+  top: 3441px;
+  left: 566px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle10:hover+.maindot10 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+.maindot10 {
+  position: absolute;
+  top: 3451px;
+  left: 400px;
+  display: block;
+  width: 198px;
+  height: 15px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+#circle11 {
+  font-size: 35px;
+  position: absolute;
+  top: 3635px;
+  right: 579px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle11:hover+.maindot11 {
+  animation: redot 3s linear 0s infinite;
+}
+
+.maindot11 {
+  position: absolute;
+  top: 3601px;
+  right: 477px;
+  display: block;
+  width: 137px;
+  height: 58px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle12 {
+  font-size: 35px;
+  position: absolute;
+  top: 3882px;
+  left: 577px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.289);
+  cursor: pointer;
+}
+
+
+#circle12:hover+.maindot12 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+.maindot12 {
+  position: absolute;
+  top: 3850px;
+  left: 387px;
+  display: block;
+  width: 224px;
+  height: 56px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+
+
+.re-div>.h1promation {
+  font-family: 'Russo One';
+  font-size: 160px;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 3510px;
+  left: 10px;
+  text-transform: uppercase;
+}
+
+
+.promotionp1 {
+  position: absolute;
+  top: 3290px;
+  right: 160px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+.promotionp2 {
+  position: absolute;
+  top: 3447px;
+  left: 209px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+.promotionp3 {
+  position: absolute;
+  top: 3589px;
+  right: 174px;
+  display: block;
+  width: 286px;
+  height: 130px;
+}
+
+.promotionp4 {
+  position: absolute;
+  top: 3811px;
+  left: 190px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+
+
+.g-re4>img {
+  width: 780px;
+  height: 1785px;
+  object-fit: cover;
+  position: absolute;
+  top: 4440px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(-4px 4px 19px black);
+}
+
+#circle13 {
+  font-size: 35px;
+  position: absolute;
+  top: 4567px;
+  right: 577px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.574);
+  cursor: pointer;
+}
+
+
+#circle13:hover+.maindot13 {
+  animation: redot 3s linear 0s infinite;
+}
+
+
+.maindot13 {
+  position: absolute;
+  top: 4578px;
+  right: 443px;
+  display: block;
+  width: 171px;
+  height: 73px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle14 {
+  font-size: 35px;
+  position: absolute;
+  top: 5053px;
+  left: 616px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.286);
+  cursor: pointer;
+}
+
+
+#circle14:hover+.maindot14 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+.maindot14 {
+  position: absolute;
+  top: 5062px;
+  left: 433px;
+  display: block;
+  width: 208px;
+  height: 18px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle15 {
+  font-size: 35px;
+  position: absolute;
+  top: 5240px;
+  right: 587px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.225);
+  cursor: pointer;
+}
+
+
+#circle15:hover+.maindot15 {
+  animation: redot 3s linear 0s infinite;
+}
+
+.maindot15 {
+  position: absolute;
+  top: 5198px;
+  right: 345px;
+  display: block;
+  width: 281px;
+  height: 67px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+#circle16 {
+  font-size: 35px;
+  position: absolute;
+  top: 5685px;
+  left: 564px;
+  z-index: 2;
+  color: rgba(72, 72, 72, 0.286);
+  cursor: pointer;
+}
+
+
+#circle16:hover+.maindot16 {
+  animation: redot2 3s linear 0s infinite;
+}
+
+.maindot16 {
+  position: absolute;
+  top: 5637px;
+  left: 494px;
+  display: block;
+  width: 95px;
+  height: 100px;
+  z-index: 1;
+  stroke-dasharray: 8;
+  stroke-dashoffset: 25;
+}
+
+
+
+
+.re-div>.h1woorisool {
+  font-family: 'Russo One';
+  font-size: 180px;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 5150px;
+  right: -60px;
+  text-transform: uppercase;
+}
+
+.woorip1 {
+  position: absolute;
+  top: 4620px;
+  right: 160px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+.woorip2 {
+  position: absolute;
+  top: 5058px;
+  left: 227px;
+  display: block;
+  width: 267px;
+  height: 130px;
+
+}
+
+.woorip3 {
+  position: absolute;
+  top: 5101px;
+  right: 101px;
+  display: block;
+  width: 290px;
+  height: 130px;
+}
+
+.woorip4 {
+  position: absolute;
+  top: 5644px;
+  left: 202px;
+  display: block;
+  width: 267px;
+  height: 130px;
+}
+
+.end {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.end>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Russo One';
+}

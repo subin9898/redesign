@@ -5,12 +5,60 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     let winTop = $(window).scrollTop()
-    if (winTop >= 350) {
+    if (winTop >= 300) {
       $("header").addClass("small")
     } else {
       $("header").removeClass("small")
     }
   })
+
+//------------------------------------------------------
+//mobile ver
+
+
+  $(window).scroll(function(){
+    let winTop = $(window).scrollTop()
+    if (winTop >=300){
+      $(".mologo").css("display","block")
+    }else{
+      $(".mologo").css("display","none")
+    }
+  })
+
+
+//---------------------------------------------------
+
+// let menuState = false;
+// $(".btnMoMenu").click(function(){
+//   if(menuState == flase){
+//     $(".moMenu").addClass("show")
+
+//     menuState = true
+//   }else{
+//     $(".moMenu").removeClass("show")
+
+//     menuState = flase
+
+//   }
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   //--main_product
 
@@ -34,11 +82,6 @@ $(document).ready(function () {
     $(this).addClass("on")
   })
   //--------------------------------------------------------
-
-
-
-
-
 
 
 
@@ -76,8 +119,6 @@ $(document).ready(function () {
     // }
   })
 
-
-
   let station2 = new Swiper(".img_station", {
     loop: true,
     direction: "horizontal",
@@ -111,13 +152,6 @@ $(document).ready(function () {
     e.preventDefault()
     $(".vid_popup2").removeClass("on")
   })
-
-
-
-
-
-
-
 
   //-----------------woori_popup
 

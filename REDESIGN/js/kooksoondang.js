@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     let winTop = $(window).scrollTop()
-    if (winTop >= 300) {
+    if (winTop >= 100) {
       $("header").addClass("small")
     } else {
       $("header").removeClass("small")
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   $(window).scroll(function(){
     let winTop = $(window).scrollTop()
-    if (winTop >=300){
+    if (winTop >=100){
       $(".mologo").css("display","block")
     }else{
       $(".mologo").css("display","none")
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
 //---------------------------------------------------
-
+//mo .ver
 // let menuState = false;
 // $(".btnMoMenu").click(function(){
 //   if(menuState == flase){
@@ -42,20 +42,7 @@ $(document).ready(function () {
 //   }
 // })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//---------------------------------------------------------
 
 
 

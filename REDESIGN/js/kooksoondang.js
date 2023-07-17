@@ -22,25 +22,42 @@ $(document).ready(function () {
       $(".mologo").css("display","block")
     }else{
       $(".mologo").css("display","none")
+      
     }
   })
 
 
+
+  $(".inner_mo_header").mouseover(function(){
+    
+      $(".mologo").css("display","block")
+    })
+
+  $(".inner_mo_header").mouseout(function(){
+      $(".mologo").css("display","none")
+      
+    })
+    
+  
+
+
 //---------------------------------------------------
+
 //mo .ver
-// let menuState = false;
-// $(".btnMoMenu").click(function(){
-//   if(menuState == flase){
-//     $(".moMenu").addClass("show")
 
-//     menuState = true
-//   }else{
-//     $(".moMenu").removeClass("show")
 
-//     menuState = flase
+let menuState = false;
+$(".btnMoMenu").click(function(){
+  if(menuState == flase){
+    $(".moMenu").addClass("show")
 
-//   }
-// })
+    menuState = true
+  }else{
+    $(".moMenu").removeClass("show")
+    menuState = flase
+
+  }
+})
 
 //---------------------------------------------------------
 

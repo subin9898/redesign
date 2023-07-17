@@ -34,9 +34,9 @@
     height: 100%;
   }
 
-  /* .inner_mo_header:hover>.mologo{
+  .inner_mo_header:hover>.mologo{
     display: block;
-  } */
+  }
 
 
   .btnMoMenu{
@@ -181,7 +181,7 @@
   .videobanner{
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    margin-bottom: 20px;
   }
   .videobanner video{
     width: 100%;
@@ -198,23 +198,27 @@
 
   .inner_left>h3{
     position: absolute;
-    top: 300px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
 
   }
   .inner_left>p{
     position: absolute;
-    top: 400px;
+    top: 136px;
     left: 50%;
     transform: translateX(-50%);
 
   }
 
+  .main_product{
+    position: relative;
+  }
+
 
   .main_product>.inner_product>ul.on{
     position: absolute;
-    top: 500px;
+    top: 255px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -253,7 +257,7 @@
     width: 100%;
     height: 100%;
     padding: 5px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 300px;
   }
 
@@ -322,27 +326,42 @@
   .juhangro>ul>li:last-of-type{
     margin-right: 0;
   }
+
+  /* ---------------------------------------------- */
+
+
   .footer{
     position: relative;
     z-index: 10;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 150px; */
   }
 
   .footer>.inner_footer{
-    position: absolute;
+    /* position: absolute;
     top:0;
-    left: 0;
+    left: 0; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    font-size: 13px;
+    /* border: 1px solid lime; */
+
   }
 
-  /* .ft_center>a{
+    .ft_center{
+      text-align: center;
+    }
+
+
+  .ft_center>a{
     width:28vw;
     height: 10vw;
     max-width:230px;
     position: absolute;
     top: 0px;
     left: 50%;
+    transform: translateX(-50%);
   }
 
   .ft_center img{
@@ -350,11 +369,34 @@
     height: 100%;
     object-fit: contain;
   }
-  .ft_2{
-    border: 1px solid lime;
-    position: absolute;
-    top: 20px;
-    left: 0;
-  } */
+
+
+  .ft_info{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+    margin-top: 75px;
+  }
+  .ft_info>li{
+    margin-bottom: 5px;
+  }
+
+  .ft_info>li:last-of-type{
+    margin-bottom: 0;
+  }
+
+  .ft_right{
+    display: none;
+  }
+
+
+  .top_button{
+    z-index: 10;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+  }
+
 }
   

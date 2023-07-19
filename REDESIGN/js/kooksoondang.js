@@ -48,13 +48,15 @@ $(document).ready(function () {
 
 let menuState = false;
 $(".btnMoMenu").click(function(){
-  if(menuState == flase){
+  if(menuState == false){
     $(".moMenu").addClass("show")
-
+    $(".btnMoMenu>span").css("background","black")
     menuState = true
   }else{
     $(".moMenu").removeClass("show")
-    menuState = flase
+    $(".btnMoMenu>span").css("background","white")
+
+    menuState = false
 
   }
 })

@@ -51,15 +51,45 @@ $(".btnMoMenu").click(function(){
   if(menuState == false){
     $(".moMenu").addClass("show")
     $(".btnMoMenu>span").css("background","black")
+    $("html").css("overflow", "hidden")
+
     menuState = true
   }else{
     $(".moMenu").removeClass("show")
     $(".btnMoMenu>span").css("background","white")
+    $("html").css("overflow", "auto")
+
 
     menuState = false
 
   }
 })
+//----------------------------------------------------------
+let menuState2 = false;
+
+$(".mobileMenuList>li:after").click(function(){
+  if(menuState2 == false){
+    $(".mobileMenuList>li").css("height","auto")
+
+    menuState2 = true
+
+  }else{
+    $(".mobileMenuList>li").css("height","50px")
+
+    menuState2 = false
+
+  }
+  
+})
+
+
+
+
+
+
+
+
+
 
 //---------------------------------------------------------
 

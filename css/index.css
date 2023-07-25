@@ -702,14 +702,14 @@ html {
 
 
 .bannerPopup {
-  width: 940px;
-  height: 685px;
-  border: 3px solid #fff;
+  width: 500px;
+  height: 385px;
   background-color: #000;
   color: #fff;
   position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
   opacity: 0;
   transition: all 0.5s ease 0s;
@@ -725,22 +725,22 @@ html {
 .bannerPopup>h1 {
   font-family: 'Russo One';
   text-transform: uppercase;
-  font-size: 45px;
-  padding-left: 20px;
-  padding-top: 20px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .bannerPopup>p {
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 100;
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
 .bannerPopup>figure {
-  width: 800px;
-  height: 300px;
+  width: 400px;
+  height: 125px;
   margin: 0 auto;
 }
 
@@ -758,15 +758,15 @@ html {
 
 .colorboard1 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   margin-right: 15px;
   position: relative;
 }
 
 .colorboard1>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #fbc121;
   margin: 0 auto;
   margin-top: 10px;
@@ -774,24 +774,25 @@ html {
 
 .colorboard1>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .colorboard2 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
+  margin-right: 15px;
   position: relative;
 }
 
 .colorboard2>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #db0008;
   margin: 0 auto;
   margin-top: 10px;
@@ -799,25 +800,25 @@ html {
 
 .colorboard2>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 
 .popupinfo {
   position: absolute;
-  left: 50%;
-  top: 450px;
-  font-size: 20px;
+  left: 56%;
+  top: 215px;
+  font-size: 15px;
   font-weight: 200;
 }
 
 .popupinfo>dt {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -836,7 +837,7 @@ html {
   bottom: 20px;
   right: 30px;
   font-family: 'Russo One';
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -844,14 +845,14 @@ html {
 /* --------------------------------------------------- */
 
 .bannerPopup2 {
-  width: 940px;
-  height: 685px;
-  border: 3px solid #fff;
+  width: 500px;
+  height: 385px;
   background-color: #000;
   color: #fff;
   position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
   opacity: 0;
   transition: all 0.5s ease 0s;
@@ -866,22 +867,22 @@ html {
 .bannerPopup2>h1 {
   font-family: 'Russo One';
   text-transform: uppercase;
-  font-size: 45px;
-  padding-left: 20px;
-  padding-top: 20px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .bannerPopup2>p {
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 100;
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
 .bannerPopup2>figure {
-  width: 800px;
-  height: 300px;
+  width: 400px;
+  height: 125px;
   margin: 0 auto;
 }
 
@@ -893,21 +894,21 @@ html {
 
 .bannerPopup2>.colorboard {
   display: flex;
-  margin-left: 70px;
+  margin-left: 50px;
   margin-top: 20px;
 }
 
 .bannerPopup2 .colorboard1 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   margin-right: 15px;
   position: relative;
 }
 
 .bannerPopup2 .colorboard1>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #fbc121;
   margin: 0 auto;
   margin-top: 10px;
@@ -915,26 +916,26 @@ html {
 
 .bannerPopup2 .colorboard1>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 63px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .bannerPopup2 .colorboard2 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   position: relative;
   margin-right: 15px;
 
 }
 
 .bannerPopup2 .colorboard2>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #EA35F9;
   margin: 0 auto;
   margin-top: 10px;
@@ -942,25 +943,25 @@ html {
 
 .bannerPopup2 .colorboard2>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 63px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .bannerPopup2 .colorboard3 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   margin-right: 15px;
   position: relative;
 }
 
 .bannerPopup2 .colorboard3>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #001032;
   margin: 0 auto;
   margin-top: 10px;
@@ -968,11 +969,11 @@ html {
 
 .bannerPopup2 .colorboard3>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 63px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -980,20 +981,20 @@ html {
 
 .banner .bannerPopup2 .popupinfo {
   position: absolute;
-  left: 62%;
-  top: 450px;
+  left: 66%;
+  top: 217px;
   font-size: 20px;
   font-weight: 200;
 }
 
 .bannerPopup2 .popupinfo figure {
   position: absolute;
-  top: 58px;
-  left: -110px;
+  top: 40px;
+  right: -190px;
 }
 
 .bannerPopup2 .popupinfo>dt {
-  font-size: 30px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 
@@ -1001,7 +1002,7 @@ html {
 
 .bannerPopup2 .popupinfo>dd svg {
   width: 500px;
-  height: 50px;
+  height: 25px;
   margin-bottom: 10px;
 
 }
@@ -1009,14 +1010,14 @@ html {
 /* ----------------------------------------------------------- */
 
 .bannerPopup3 {
-  width: 940px;
-  height: 685px;
-  border: 3px solid #fff;
+  width: 500px;
+  height: 385px;
   background-color: #000;
   color: #fff;
   position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
   opacity: 0;
   transition: all 0.5s ease 0s;
@@ -1031,22 +1032,22 @@ html {
 .bannerPopup3>h1 {
   font-family: 'Russo One';
   text-transform: uppercase;
-  font-size: 45px;
-  padding-left: 20px;
-  padding-top: 20px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .bannerPopup3>p {
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 100;
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
 .bannerPopup3>figure {
-  width: 800px;
-  height: 300px;
+  width: 400px;
+  height: 125px;
   margin: 0 auto;
 }
 
@@ -1064,15 +1065,15 @@ html {
 
 .bannerPopup3 .colorboard1 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   margin-right: 15px;
   position: relative;
 }
 
 .bannerPopup3 .colorboard1>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #f6ecb7;
   margin: 0 auto;
   margin-top: 10px;
@@ -1080,26 +1081,26 @@ html {
 
 .bannerPopup3 .colorboard1>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .bannerPopup3 .colorboard2 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   position: relative;
   margin-right: 15px;
 
 }
 
 .bannerPopup3 .colorboard2>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #263684;
   margin: 0 auto;
   margin-top: 10px;
@@ -1107,55 +1108,55 @@ html {
 
 .bannerPopup3 .colorboard2>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 
 
-.bannerPopup3 .colorboard3>p {
+/* .bannerPopup3 .colorboard3>p {
   position: absolute;
   top: 120px;
   left: 25px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
-}
+} */
 
 
 
 .bannerPopup3 .popupinfo {
   position: absolute;
-  left: 50%;
-  top: 450px;
+  left: 51%;
+  top: 217px;
   font-size: 20px;
   font-weight: 200;
 }
 
 .bannerPopu32 .popupinfo>dt {
-  font-size: 30px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 
 
 
 .bannerPopup3 .popupinfo>dd {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
 .bannerPopup3 .popupinfo>dd:first-of-type {
   font-family: 'Cafe24Ssurround';
-  margin-bottom: 5px;
+  margin-bottom: -1px;
 }
 
 .bannerPopup3 .popupinfo>dd:nth-of-type(2) {
-  margin-bottom: 5px;
+  margin-bottom: -6px;
   font-family: 'snata';
 }
 
@@ -1170,14 +1171,14 @@ html {
 
 /* ------------------------------------------------ */
 .bannerPopup4 {
-  width: 940px;
-  height: 685px;
-  border: 3px solid #fff;
+  width: 500px;
+  height: 385px;
   background-color: #000;
   color: #fff;
   position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
   opacity: 0;
   transition: all 0.5s ease 0s;
@@ -1192,22 +1193,22 @@ html {
 .bannerPopup4>h1 {
   font-family: 'Russo One';
   text-transform: uppercase;
-  font-size: 45px;
-  padding-left: 20px;
-  padding-top: 20px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .bannerPopup4>p {
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 100;
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
 .bannerPopup4>figure {
-  width: 800px;
-  height: 300px;
+  width: 400px;
+  height: 125px;
   margin: 0 auto;
 }
 
@@ -1225,15 +1226,15 @@ html {
 
 .bannerPopup4 .colorboard1 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   margin-right: 15px;
   position: relative;
 }
 
 .bannerPopup4 .colorboard1>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #10003e;
   margin: 0 auto;
   margin-top: 10px;
@@ -1241,26 +1242,26 @@ html {
 
 .bannerPopup4 .colorboard1>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 .bannerPopup4 .colorboard2 {
   background-color: #fff;
-  width: 150px;
-  height: 200px;
+  width: 80px;
+  height: 115px;
   position: relative;
   margin-right: 15px;
 
 }
 
 .bannerPopup4 .colorboard2>div {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: #fec900;
   margin: 0 auto;
   margin-top: 10px;
@@ -1268,17 +1269,17 @@ html {
 
 .bannerPopup4 .colorboard2>p {
   position: absolute;
-  top: 120px;
-  left: 25px;
+  top: 68px;
+  left: 10px;
   color: #000;
   font-family: 'Noto Sans KR';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 
 
-.bannerPopup4 .colorboard3>p {
+/* .bannerPopup4 .colorboard3>p {
   position: absolute;
   top: 120px;
   left: 25px;
@@ -1286,20 +1287,20 @@ html {
   font-family: 'Noto Sans KR';
   font-size: 20px;
   text-transform: uppercase;
-}
+} */
 
 
 
 .bannerPopup4 .popupinfo {
   position: absolute;
-  left: 50%;
-  top: 450px;
-  font-size: 20px;
+  left: 56%;
+  top: 215px;
+  font-size: 15px;
   font-weight: 200;
 }
 
 .bannerPopup4 .popupinfo>dt {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 

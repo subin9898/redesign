@@ -1752,7 +1752,7 @@ html {
 }
 
 .train2>li .popup8 .popupfont>li:nth-of-type(1) {
-  font-family: ;
+  /* font-family: ; */
   font-weight: bold;
 }
 
@@ -1780,9 +1780,59 @@ html {
   margin-left: 15px;
 }
 
+.popup>.scroll{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup>.scroll>.scr{
+  width: auto;
+  /* margin-top: 640px; */
+}
+
+.scroll {
+  /* display: none; */
+  border: 1px solid darkgray;
+  width: 20px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-left: -10px; */
+  margin-top: 610px;
+  font-size: 0;
+  border-radius: 10px;
+}
 
 
 
+
+.popup>.scroll>.scr {
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: darkgray;
+  border-radius: 50%;
+  margin-left: -5px;
+  animation: wheelAni 1s ease 0s infinite alternate;
+  color: darkgray;
+}
+
+
+@keyframes wheelAni {
+  0% {
+    top: 10px;
+  }
+
+  100% {
+    top: 60px;
+  }
+}
 
 
 
@@ -1897,10 +1947,13 @@ html {
   left: 900px;
 }
 
+
+
 .re-div {
   position: relative;
-  width: 100%;
-  height: 600vh;
+  /* width: 100%; */
+  width: 1900px;
+  /* height: 600vh; */
 }
 
 

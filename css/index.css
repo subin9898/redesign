@@ -1823,6 +1823,12 @@ html {
   color: darkgray;
 }
 
+.popup>.scroll>span:last-of-type{
+  position: absolute;
+  left: 50%;
+  top: 25px;
+}
+
 
 @keyframes wheelAni {
   0% {
@@ -1890,6 +1896,7 @@ html {
 
 .redesign>.re-main section>dd {
   font-size: 20px;
+  word-break: keep-all;
 }
 
 .redesign>.re-main section>dd:nth-of-type(2) {

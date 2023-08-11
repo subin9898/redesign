@@ -2683,12 +2683,30 @@ html {
   position: relative;
 }
 
-.end>p {
+.end>.thk {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 50px;
+  font-family: 'Russo One';
+}
+
+
+
+.end>.email{
+  position: absolute;
+  top: 55%;
+  left: 609px;
+  font-size: 20px;
+  font-family: 'Russo One';
+}
+
+.end>.tel{
+  position: absolute;
+  top: 55%;
+  right: 612px;
+  font-size: 20px;
   font-family: 'Russo One';
 }

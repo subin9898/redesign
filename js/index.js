@@ -92,10 +92,14 @@ $(document).ready(function () {
 
   //->메인페이지 메뉴창
   //-----------------------------------------
+  
 
-  // $(".gnb li").click(function(){
-  //   $(this)
-  // })
+  $(".gnb>ul>li").click(function(){
+    $(".Menubtn").removeClass("close")
+    $(".back").removeClass("show")
+    $("html").css("overflow", "auto")
+
+  })
 
 
   //-----------------------------------------------------------------------

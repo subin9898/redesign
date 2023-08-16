@@ -239,18 +239,27 @@ html {
   pointer-events: auto;
   opacity: 1;
   left: 0;
+  display: flex;
+  align-items: center;
 }
 
 
 .back>.gnb {
   font-family: 'Russo One';
   color: #fff;
-  position: absolute;
+  /* position: absolute;
   top: 160px;
-  left: 150px;
+  left: 150px; */
   text-transform: uppercase;
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  border: 1px solid red;
+  margin-left: 85px
 }
+
+/* .back.show>.gnb>ul{
+  display: flex;
+  flex-direction: column;
+} */
 
 .back>.gnb li {
   line-height: 0;
@@ -317,7 +326,16 @@ html {
 .about {
   height: 100vh;
   position: relative;
+  display:flex;
+  align-items: center;;
 }
+.aboutFlex {
+  border: 1px solid red;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
 
 .about>h1:first-of-type {
   font-family: 'Russo One';
@@ -396,10 +414,11 @@ html {
 
 .educ {
   font-family: 'Russo One';
-  position: absolute;
+  flex:1;
+  /* position: absolute;
   top: 395px;
-  left: 95px;
-  width: 800px;
+  left: 95px; */
+  /* width: 800px; */
 }
 
 .educ>h3 {
@@ -426,11 +445,12 @@ html {
 
 
 .iam {
-  position: absolute;
+  /* position: absolute;
   top: 430px;
-  right: 250px;
-  width: 612px;
-  height: 700px;
+  right: 250px; */
+  /* width: 612px; */
+  /* height: 700px; */
+  flex:1;
   word-break: keep-all;
 }
 
@@ -451,9 +471,20 @@ html {
 }
 
 .LANGUAGES>section {
-  width: 50%;
+  border: 1px solid red;
   height: 100%;
-  background-color: #fff;
+  display: flex;
+}
+.LANGUAGES>section>section {
+  flex: 1;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.white{
+  background:#fff;
 }
 
 .LANGUAGES>section>h1 {
@@ -468,9 +499,9 @@ html {
 .html {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute;
   top: 260px;
-  left: 115px;
+  left: 115px; */
   width: 700px;
 }
 
@@ -524,9 +555,9 @@ html {
 } */
 
 .css {
-  position: absolute;
+  /* position: absolute;
   top: 550px;
-  left: 115px;
+  left: 115px; */
   display: flex;
   justify-content: space-between;
   width: 700px;
@@ -537,9 +568,9 @@ html {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute;
   top: 260px;
-  right: 115px;
+  right: 115px; */
   width: 700px;
 }
 
@@ -570,9 +601,9 @@ html {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute;
   top: 550px;
-  right: 115px;
+  right: 115px; */
   width: 700px;
 }
 
@@ -1869,10 +1900,19 @@ html {
 }
 
 .re-main {
-  width: 100%;
+  width: 1440px;
   height: 100vh;
+  border: 1px solid red;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
-
+.re-main>figure {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  border: 1px solid red;
+}
 .redesign>.re-main>h1 {
   font-family: 'Russo One';
   font-size: 134px;
@@ -1883,9 +1923,9 @@ html {
 }
 
 .redesign>.re-main section {
-  position: absolute;
+  /* position: absolute;
   top: 450px;
-  left: 250px;
+  left: 250px; */
 
 }
 
@@ -1940,8 +1980,8 @@ html {
   height: 900px;
   object-fit: contain;
   position: absolute;
-  top: 100px;
-  left: 700px;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -1950,8 +1990,8 @@ html {
   height: 900px;
   object-fit: contain;
   position: absolute;
-  top: 100px;
-  left: 900px;
+  top: 0;
+  right: 10px;
 }
 
 
@@ -1961,6 +2001,7 @@ html {
   /* width: 100%; */
   width: 1900px;
   /* height: 600vh; */
+  margin: 0 auto;
 }
 
 

@@ -28,15 +28,15 @@ $(document).ready(function () {
 
 
 
-  $(".inner_mo_header").mouseover(function(){
+  // $(".inner_mo_header").mouseover(function(){
     
-      $(".mologo").css("display","block")
-    })
+  //     $(".mologo").css("display","block")
+  //   })
 
-  $(".inner_mo_header").mouseout(function(){
-      $(".mologo").css("display","none")
+  // $(".inner_mo_header").mouseout(function(){
+  //     $(".mologo").css("display","none")
       
-    })
+  //   })
     
   
 
@@ -51,13 +51,13 @@ $(".btnMoMenu").click(function(){
   if(menuState == false){
     $(".moMenu").addClass("show")
     $(".btnMoMenu>span").css("background","black")
-    $("html").css("overflow", "hidden")
+    // $("html").css("overflow", "hidden")
 
     menuState = true
   }else{
     $(".moMenu").removeClass("show")
     $(".btnMoMenu>span").css("background","white")
-    $("html").css("overflow", "auto")
+    // $("html").css("overflow", "auto")
 
 
     menuState = false

@@ -252,7 +252,7 @@ html {
   left: 150px; */
   text-transform: uppercase;
   /* margin-top: 80px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 85px
 }
 
@@ -325,42 +325,56 @@ html {
 
 .about {
   height: 100vh;
-  position: relative;
-  display:flex;
-  align-items: center;;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .aboutFlex {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 80%;
   margin: 0 auto;
   display: flex;
 }
 
+.do{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
 
-.about>h1:first-of-type {
+.do>ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.do li:first-of-type {
   font-family: 'Russo One';
   font-size: 134px;
-  position: absolute;
+  /* position: absolute;
   top: 20px;
-  left: 95px;
+  left: 95px; */
   text-transform: uppercase;
 }
 
-.about>h1:nth-of-type(2) {
+.do li:last-of-type {
   font-family: 'SBAggroB';
   font-size: 50px;
-  position: absolute;
+  /* position: absolute;
   top: 98px;
-  right: 745px;
+  right: 745px; */
   text-transform: uppercase;
 }
 
-.about>h1:last-of-type {
+.do h1{
   font-family: 'SBAggroB';
   font-size: 30px;
-  position: absolute;
+  /* position: absolute;
   top: 155px;
-  left: 98px;
+  left: 98px; */
   text-transform: uppercase;
 }
 
@@ -368,20 +382,7 @@ html {
 
 
 
-/* .profileimg {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 50px;
-  left: 900px;
-}
 
-.profileimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-} */
 
 .info {
   font-family: 'Russo One';
@@ -637,6 +638,9 @@ html {
   color: #fff;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner>h1 {
@@ -670,10 +674,10 @@ html {
   width: 1290px;
   height: 500px;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute;
   top: 300px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .train {
@@ -1351,6 +1355,9 @@ html {
 .popup {
   height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup>h1 {
@@ -1385,10 +1392,10 @@ html {
   width: 1020px;
   height: 500px;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute;
   top: 300px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .train2 {
@@ -1902,7 +1909,7 @@ html {
 .re-main {
   width: 1440px;
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1911,7 +1918,7 @@ html {
   position: relative;
   width: 1000px;
   height: 600px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .redesign>.re-main>h1 {
   font-family: 'Russo One';
@@ -2722,13 +2729,30 @@ html {
   width: 100%;
   height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+
 }
 
-.end>.thk {
-  position: absolute;
+.end>section{
+display: flex;
+justify-content: center;
+
+}
+
+.end>section>ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.end .thk {
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   text-transform: uppercase;
   font-size: 50px;
   font-family: 'Russo One';
@@ -2736,18 +2760,18 @@ html {
 
 
 
-.end>.email{
-  position: absolute;
+.end .email{
+  /* position: absolute;
   top: 55%;
-  left: 609px;
+  left: 609px; */
   font-size: 20px;
   font-family: 'Russo One';
 }
 
-.end>.tel{
+/* .end>.tel{
   position: absolute;
   top: 55%;
   right: 612px;
   font-size: 20px;
   font-family: 'Russo One';
-}
+} */

@@ -26,6 +26,10 @@ $(document).ready(function () {
     }
   })
 
+  // $(".inner_mo_header").hover(function(){
+  //   $(".btnMoMenu>span").css("opacity","1")
+  // })
+
 
 
   // $(".inner_mo_header").mouseover(function(){

@@ -28,13 +28,24 @@ $(document).ready(function () {
 
   //------------------------------------------------------------------
   $(".all>div").on("wheel DOMMouseScroll", function (event) {
+    // div에 마우스 휠 이벤트와 돔마우스스크롤 이벤트를 걸었습니다.
     //on -> 이벤트를 여러개 묶어 사용할 수 있다.
     // console.log(event)
     let E = event.originalEvent
+    //변수 E 에 이벤트 객체의 속성으로 사용할 수 있는 속성인 originalEvent 를 넣었습니다.
     let delta = 0;
+    //변수 delta 에 숫자 자료형 0 을 넣어 두었습니다.
     if (E.detail) {
+    // 이 조건에서는 e.originalEvent 의 속성으로 detail 가 있다면 입니다.
+    // 익스, 크롬 등은 e.originalEvent 에 detail 의 속성이 없으나,
+    // 파이어 폭스 일 경우엔 detail 속성이 있습니다.
+    // 그래서 이 조건을 실행 시킵니다.
       delta = E.detail * -40
+    //이렇게 해주는 이유는 detail 의 값이 익스와 크롬과는 다르게 3 이 찍힙니다.
+    // 익스, 크롬은 120 이 찍히죠.
+    // 익스, 크롬과 동일하게 해주기 위해서 이렇게 해줍니다.
     } else {
+      // 이곳에서는 익스, 크롬의 e.originalEvent 의 속성으로 wheelDelta 를 사용할 수 있습니다.
       delta = E.wheelDelta
     }
     //--->  브라우저 호환성을 맞취주는 설정
@@ -98,7 +109,7 @@ $(document).ready(function () {
     $(".Menubtn").removeClass("close")
     $(".back").removeClass("show")
     $("html").css("overflow", "auto")
-
+    menuState = false
   })
 
 
@@ -194,6 +205,7 @@ $(document).ready(function () {
 
   //->배너 팝업
 
+
   // ---------------------------------------------------------------------------------
   let count2 = 0;
   $(".station2").on("wheel DOMMouseScroll", function (event) {
@@ -225,9 +237,8 @@ $(document).ready(function () {
     //이벤트 버블링을 막아줌
   })
 
-  //-> POPUP 스크롤 슬라이드
-
-  //-------------------------------------------------------------------------------
+  // -> popup 스크롤버전
+//---------------------------------------------------------------------------------------
 
 
 
